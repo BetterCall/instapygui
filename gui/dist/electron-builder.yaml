@@ -1,0 +1,23 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.ahmadudin.instapygui
+win:
+  target: NSIS
+  icon: build/icon.ico
+mac:
+  category: public.app-category.utility
+dmg:
+  contents:
+    - x: 110
+      'y': 150
+    - x: 240
+      'y': 150
+      type: link
+      path: /Applications
+linux:
+  category: Utilty
+  target:
+    - deb
+  icon: build/
+electronVersion: 1.6.18
